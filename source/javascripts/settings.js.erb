@@ -9,7 +9,7 @@ var MEME_SETTINGS = {
   fontFamily: 'Helvetica Neue',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['Arial', 'Helvetica Neue', 'Comic Sans MS'],
+  fontFamilyOpts: ['Arial', 'Helvetica Neue', 'Comic Sans MS', 'Impact'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -54,8 +54,9 @@ var MEME_SETTINGS = {
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
+    {text: 'Block M', value: '<%= image_path("block-m.png") %>', data: ''},
     {text: 'Vox', value: '<%= image_path("vox.png") %>', data: '<%= asset_data_uri("vox.png") %>'},
-    {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''}
+    {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''} 
   ],
 
   width: 755 // Canvas rendering width.
